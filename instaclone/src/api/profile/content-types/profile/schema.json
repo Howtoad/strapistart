@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profiles",
+  "info": {
+    "singularName": "profile",
+    "pluralName": "profiles",
+    "displayName": "profile",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "bio": {
+      "type": "text",
+      "maxLength": 300,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 80,
+      "unique": true
+    },
+    "created": {
+      "type": "datetime",
+      "unique": true,
+      "required": true
+    }
+  }
+}
